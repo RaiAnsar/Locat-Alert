@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.woxich.locatalert">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-feature android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/gaspar_chat_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/gaspar_chat_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GasparChat"
+        android:name="com.woxich.locatalert.GasparChatApplication">
+        <activity
+            android:name="com.woxich.locatalert.MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.GasparChat.NoActionBar"
+            android:launchMode="standard"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.woxich.locatalert.MainGeoActivity"
+            android:exported="false"/>
+        <activity android:name="com.woxich.locatalert.AlarmActivity"
+            android:exported="false"/>
+        <activity android:name="com.woxich.locatalert.presentation.MainNoteActivity"
+            android:exported="false"/>
+
+        <receiver android:name="com.woxich.locatalert.GeoFenceBroadcastReceiver"/>
+
+
+        <service
+            android:name="com.woxich.locatalert.GasparChatMessageService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!-- Set custom default icon. This is used when no icon is set for incoming notification messages.
+     See README(https://goo.gl/l4GJaQ) for more. -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/gaspar_chat_notification_icon" />
+        <!-- Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more. -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/purple_500" />
+        <!-- Set notification channel to FCM -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/gaspar_chat_notification_channel_id" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBCx68Uw7GILjwrWQrewr2I8uXjGwgh2Gg" />
+
+    </application>
+
+    <queries>
+        <package android:name="com.google.android.apps.maps" />
+    </queries>
+
+</manifest>
+
+
+
+

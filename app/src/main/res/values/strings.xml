@@ -1,0 +1,198 @@
+<resources>
+    <string name="app_name">LocatAlert</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="info">Info</string>
+    <string name="undo">Undo</string>
+    <string name="retry">retry</string>
+    <string name="gaspar_chat_notification_channel">LocatAlert Notifications</string>
+    <string name="gaspar_chat_notification_channel_desc">Displays notifications for the application.</string>
+    <string name="gaspar_chat_notification_channel_id">gaspar_chat_notification_channel</string>
+    <string name="google_play_success">Google Play is now available!</string>
+    <string name="google_play_fail">Google Play Services could not be installed!</string>
+
+    <string name="login_prompt">Please sign in!</string>
+    <string name="login_email">E-mail address</string>
+    <string name="login_password">Password</string>
+    <string name="login">Login</string>
+    <string name="login_redirect_to_register">Not registered?</string>
+    <string name="login_invalid_data">Incorrect data!</string>
+    <string name="login_cannot_be_empty">It cannot be empty!</string>
+    <string name="login_fail">Login failed!</string>
+    <string name="login_invalid_data_label">Incorrect e-mail or password!</string>
+    <string name="login_version_info">Verzió: %1$s (kód: %2$d)</string>
+
+    <string name="register_prompt">Register an account!</string>
+    <string name="register_username">Username (optional)</string>
+    <string name="register_optional">This is optional</string>
+    <string name="register_password_again">Password again</string>
+    <string name="register">Register</string>
+    <string name="register_redirect_to_login">You already have a profile?</string>
+    <string name="register_password_incorrect_length">Password length must be between %1$d és %2$d</string>
+    <string name="register_password_not_matching">Passwords do not match!</string>
+    <string name="register_whitespace_illegal">Cannot contain a space!</string>
+    <string name="register_email_invalid">Invalid email!</string>
+    <string name="register_email_in_use">This email is already in use!</string>
+    <string name="register_unknown_error">Unknown error. Please try again later!</string>
+    <string name="register_name_incorrect_length">The name is min. %1$d d and max. It can be %2$d characters</string>
+
+    <string name="home_title">Hi, %1$s!</string>
+    <string name="home_chats">Active</string>
+    <string name="home_no_chats">You have no conversations.</string>
+    <string name="home_last_message">Last message:</string>
+    <string name="home_chat_title_group">Group</string>
+    <string name="home_contacts">Friends</string>
+    <string name="home_blocked">Prohibitions</string>
+    <string name="home_no_friends">You have not added any friends.</string>
+    <string name="home_friends_error">Error loading friends!</string>
+    <string name="home_chats_error">Error loading chats!</string>
+    <string name="home_block_error">Error loading blacklist!</string>
+    <string name="home_no_blocked">You didnt blocked anyone.</string>
+    <string name="home_unblock_failed">Error unblocking.</string>
+    <string name="home_unblock_success">You have unblocked %1$s .</string>
+    <string name="home_groups">Groups</string>
+    <string name="home_groups_admin_name">Admin: %1$s</string>
+    <string name="home_groups_member_count">%1$d participant</string>
+    <string name="home_groups_fail">Failed to load groups!</string>
+    <string name="home_no_groups">You are not in a group.</string>
+
+    <string name="group_create">create</string>
+    <string name="group_create_title">Create a group</string>
+    <string name="group_create_success">Group% 1 $ s has been created!</string>
+    <string name="group_create_fail">Error creating group!</string>
+    <string name="group_add_friends">Add your friends to the group:</string>
+    <string name="group_create_name">Group name</string>
+
+    <string name="profile_title">Profile</string>
+    <string name="profile_of">%1$s profile</string>
+    <string name="profile_back">Back</string>
+    <string name="profile_log_out">Check-Out</string>
+    <string name="profile_log_out_confirm">Confirm Signout</string>
+    <string name="profile_update_display_name">Change username</string>
+    <string name="profile_display_name">Username</string>
+    <string name="profile_save">Save</string>
+    <string name="profile_display_name_info">
+        Other users will see this name. Optional. If left blank, it will be created from your email address.
+    </string>
+    <string name="profile_display_name_update_success">Your name has changed!</string>
+    <string name="profile_display_name_update_fail">Your name could not be changed!</string>
+    <string name="profile_update_password">change Password</string>
+    <string name="profile_update_password_new">New password</string>
+    <string name="profile_update_password_new_again">New password again</string>
+    <string name="profile_update_password_success">Your password has changed!</string>
+    <string name="profile_update_password_fail">Password reset failed!</string>
+    <string name="profile_update_password_old_incorrect">The current password you entered is incorrect!</string>
+    <string name="profile_delete_account">Delete your account.</string>
+    <string name="profile_delete">Deletion</string>
+    <string name="profile_delete_account_fail">Delete failed!</string>
+    <string name="profile_update_picture">Change profile picture</string>
+    <string name="profile_update_picture_preview">This is how other users will see it:</string>
+    <string name="profile_update_picture_select">Select an image</string>
+    <string name="profile_update_picture_capture">New photo</string>
+    <string name="profile_update_picture_success">Your profile picture has changed!</string>
+    <string name="profile_update_picture_fail">Error: Failed to update profile picture.</string>
+    <string name="profile_picture_deleted">Your profile picture has been deleted.</string>
+    <string name="profile_picture_delete">Delete a profile picture (or preview)</string>
+    <string name="profile_picture_load_fail">Error: Failed to load profile picture.</string>
+
+    <string name="authenticate_dialog_title">Confirmation</string>
+    <string name="authenticate_dialog_cancel">Cancel</string>
+    <string name="authenticate_dialog_confirm">OK</string>
+    <string name="authenticate_dialog_current_password">current password</string>
+
+    <string name="search_title">Search</string>
+    <string name="search_bar_label">Who are you looking for?</string>
+    <string name="search_too_short">At least %1$d you must enter a letter!</string>
+    <string name="search_too_long">At most %1$d you can enter a letter!</string>
+    <string name="search_results_empty">No search results.</string>
+    <string name="search_profile_image_description">%1$s profile picture</string>
+    <string name="search_failed">Error while searching!</string>
+    <string name="search_add_contact_description">Recording as a friend</string>
+    <string name="search_added_as_contact">%1$s-t you added me as a friend!</string>
+    <string name="search_already_contact">Friend</string>
+    <string name="search_blocked">You disabled it!</string>
+    <string name="search_block_successful">You disabled it %1$s-t!</string>
+    <string name="search_failed_to_start_chat">The conversation could not be started!</string>
+
+    <string name="chat_load_fail">The conversation failed to load.</string>
+    <string name="chat_block">Block a chat partner</string>
+    <string name="chat_unblock">Unblock</string>
+    <string name="chat_group_block">Block a group</string>
+    <string name="chat_group_unblock">Unblock group</string>
+    <string name="chat_initiate_with">Talk to : %1$s</string>
+    <string name="chat_operation_failed">Operation failed!</string>
+    <string name="chat_block_success">You have blocked the other participants!</string>
+    <string name="chat_unblock_success">You have unblocked the other participants!</string>
+    <string name="chat_no_messages">There are no messages.</string>
+    <string name="chat_room_blocked_warning">You have blocked some participants in this conversation.</string>
+    <string name="chat_menu">Conversation menu</string>
+    <string name="chat_message_empty">Message cannot be empty!</string>
+    <string name="chat_message_too_long">The message is max %1$d characters can be long (most %2$d).</string>
+    <string name="chat_send_message">send Message</string>
+    <string name="chat_profile_picture">Profile picture</string>
+    <string name="chat_message_send_fail">The message could not be sent!</string>
+    <string name="chat_message_deleted">[Deleted message]</string>
+    <string name="chat_message_delete_failed">Delete failed!</string>
+    <string name="chat_message_blocked">[Blocked message]</string>
+
+
+
+
+
+
+    <string name="channel_id">GeoAlarm</string>
+    <string name="geofence_unknown_error">
+  Unknown error: the Geofence service is not available now.
+</string>
+    <string name="geofence_not_available">
+  Geofence service is not available now. Go to Settings>Location>Mode and choose High accuracy.
+</string>
+    <string name="geofence_too_many_geofences">
+  Your app has registered too many geofences.
+</string>
+    <string name="geofence_too_many_pending_intents">
+  You have provided too many PendingIntents to the addGeofences() call.
+</string>
+    <string name="geofence_improper_permissions">Improper permissions</string>
+
+    <string name="channel_description">Notification channel for GeoAlarm</string>
+
+    <string name="alarms_route">alarms</string>
+
+    <string name="ghost_icon">Ghost icon</string>
+    <string name="location_icon">Location icon</string>
+    <string name="search_icon">Search icon</string>
+    <string name="map_icon">Map Logo</string>
+    <string name="red_cross_icon">Red Cross</string>
+
+    <string name="menu">Menu</string>
+    <string name="close">Close</string>
+    <string name="start">Start</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="save">Save</string>
+    <string name="entry">Entry</string>
+    <string name="exit">Exit</string>
+    <string name="location">Location</string>
+    <string name="ok">OK!</string>
+    <string name="open_settings">Open Settings</string>
+
+    <string name="alarm_name_label">Alarm Name</string>
+    <string name="radius_label">Radius :\ </string>
+
+    <string name="location_format">%.4f, %.4f</string>
+    <string name="location_present_format">Lat: %.4f Long: %.4f</string>
+    <string name="radius_format">%d m</string>
+
+    <string name="no_alarms">Ouhh..it\'s empty here.</string>
+    <string name="add_alarms_prompt">Go back and add some GeoAlarms :)</string>
+    <string name="bg_location_prompt">To set up GeoAlarms, we need access to your location at all times. Please grant the permission.</string>
+    <string name="bg_location_denied">Location permission denied too many times. Please, grant us access on the Settings screen.</string>
+    <string name="location_prompt">Please give us access to your GPS location</string>
+    <string name="location_rationale">This will us to notify you when you enter a area with a GeoAlarm. This is needed for the core functionality of the app</string>
+    <string name="location_denied">Location permission denied too many times. Please, grant us access on the Settings screen.</string>
+    <string name="note_title">Note</string>
+    <string name="chat_title">Chat</string>
+
+
+</resources>
