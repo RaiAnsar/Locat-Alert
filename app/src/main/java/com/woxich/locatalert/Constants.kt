@@ -5,7 +5,7 @@ import androidx.annotation.Keep
 /**
  * Tag for logging.
  */
-const val TAG = "GasparChat"
+const val TAG = "LocatAlert"
 
 /**
  * Navigation destination constants.

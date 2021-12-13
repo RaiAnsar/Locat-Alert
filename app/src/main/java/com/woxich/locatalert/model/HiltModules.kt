@@ -8,7 +8,7 @@ import androidx.room.Room
 import com.woxich.locatalert.GeoFenceBroadcastReceiver
 import com.woxich.locatalert.model.repository.NoteRepositoryImpl
 import com.woxich.locatalert.model.room.DATABASE_NAME
-import com.woxich.locatalert.model.room.GasparChatDatabase
+import com.woxich.locatalert.model.room.LocatAlertDatabase
 import com.woxich.locatalert.navigation.NavigationManager
 import com.woxich.locatalert.repository.NoteRepository
 import com.woxich.locatalert.use_case.AddNote
@@ -62,13 +62,13 @@ class FirebaseModule {
 
     @Provides
     @Singleton
-    fun provideNoteRepository(db: GasparChatDatabase): NoteRepository {
+    fun provideNoteRepository(db: LocatAlertDatabase): NoteRepository {
         return NoteRepositoryImpl(db.noteDao)
     }
 
     @Provides
     @Singleton
-    fun provideAlarmRepository(db: GasparChatDatabase): AlarmsRepository {
+    fun provideAlarmRepository(db: LocatAlertDatabase): AlarmsRepository {
         return AlarmsRepository(db.alarmsDao)
     }
 
@@ -92,8 +92,8 @@ class RoomModule {
 
     @Provides
     @Singleton
-    fun provideRoomDatabase(@ApplicationContext context: Context): GasparChatDatabase {
-        return Room.databaseBuilder(context, GasparChatDatabase::class.java, DATABASE_NAME).build()
+    fun provideRoomDatabase(@ApplicationContext context: Context): LocatAlertDatabase {
+        return Room.databaseBuilder(context, LocatAlertDatabase::class.java, DATABASE_NAME).build()
     }
 
 
@@ -102,7 +102,7 @@ class RoomModule {
 //    fun providesDB(@ApplicationContext appContext: Context): AlarmsDao {
 //        return Room.databaseBuilder(
 //            appContext.applicationContext,
-//            GasparChatDatabase::class.java,
+//            LocatAlertDatabase::class.java,
 //            "geo_alarm_database"
 //        )
 //            .fallbackToDestructiveMigration()

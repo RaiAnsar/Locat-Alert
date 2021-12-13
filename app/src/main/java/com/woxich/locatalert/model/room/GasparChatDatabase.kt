@@ -10,7 +10,7 @@ import com.woxich.locatalert.model.Note
  */
 @Database(version = 1, entities = [CachedProfilePicture::class, Note::class, Alarm::class], exportSchema = false)
 @androidx.room.TypeConverters(TypeConverters::class)
-abstract class GasparChatDatabase: RoomDatabase() {
+abstract class LocatAlertDatabase: RoomDatabase() {
 
     abstract val noteDao: NoteDao
     abstract val alarmsDao: AlarmsDao

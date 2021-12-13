@@ -6,7 +6,7 @@ import android.util.Log
 import com.woxich.locatalert.PictureConstants
 import com.woxich.locatalert.TAG
 import com.woxich.locatalert.model.room.CachedProfilePicture
-import com.woxich.locatalert.model.room.GasparChatDatabase
+import com.woxich.locatalert.model.room.LocatAlertDatabase
 import com.woxich.locatalert.model.room.cacheProfilePicture
 import com.woxich.locatalert.utils.postToUiThread
 import com.woxich.locatalert.viewmodel.VoidMethod
@@ -23,7 +23,7 @@ import javax.inject.Inject
  */
 class PictureRepository @Inject constructor(
     private val firebaseStorage: FirebaseStorage,
-    private val database: GasparChatDatabase
+    private val database: LocatAlertDatabase
 ) {
 
     /**

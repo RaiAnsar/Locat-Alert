@@ -30,7 +30,7 @@ const val MESSAGE_TOKEN_PREFERENCE = "message_token_pref"
  */
 const val TOKEN_NOT_FOUND = "token_not_found"
 
-class GasparChatMessageService: FirebaseMessagingService() {
+class LocatAlertMessageService: FirebaseMessagingService() {
 
     @Inject
     lateinit var userRepository: UserRepository

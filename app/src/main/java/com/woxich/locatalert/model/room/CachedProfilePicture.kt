@@ -68,7 +68,7 @@ data class CachedProfilePicture(
  * @param database Database object.
  */
 @WorkerThread
-fun cacheProfilePicture(userUid: String, pictureData: ByteArray, database: GasparChatDatabase) {
+fun cacheProfilePicture(userUid: String, pictureData: ByteArray, database: LocatAlertDatabase) {
     //make new object
     val cachedImage = CachedProfilePicture(
         userUid = userUid,

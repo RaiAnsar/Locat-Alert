@@ -42,12 +42,12 @@ class AlarmsScreenViewModel @Inject constructor(
         get() = _alarmType
 
     val areaRadius = Transformations.map(sliderPosition) {
-        sliderPosition.value?.times(2000)?.toInt()
+        sliderPosition.value?.times(1000)?.toInt()
     }
 
     fun changeSelectedAlarm(alarm: Alarm?) {
         _selectedAlarm.value = alarm
-        _sliderPosition.value = alarm?.radius?.toFloat()?.div(2000)
+        _sliderPosition.value = alarm?.radius?.toFloat()?.div(1000)
         _alarmName.value = alarm?.name
         _alarmType.value = alarm?.type
     }
@@ -97,7 +97,7 @@ class AlarmsScreenViewModel @Inject constructor(
     }
 
     fun menuClose() {
-        changeSelectedAlarm(alarm = null)
+        changeSelectedAlarm(null)
     }
 
     fun modifyAlarm() {

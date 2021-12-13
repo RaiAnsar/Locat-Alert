@@ -25,13 +25,13 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/gaspar_chat_icon_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.GasparChat"
-        android:name="com.woxich.locatalert.GasparChatApplication">
+        android:theme="@style/Theme.LocatAlert"
+        android:name="com.woxich.locatalert.LocatAlertApplication">
         <activity
             android:name="com.woxich.locatalert.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.GasparChat.NoActionBar"
+            android:theme="@style/Theme.LocatAlert.NoActionBar"
             android:launchMode="standard"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
@@ -51,7 +51,7 @@
 
 
         <service
-            android:name="com.woxich.locatalert.GasparChatMessageService"
+            android:name="com.woxich.locatalert.LocatAlertMessageService"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />

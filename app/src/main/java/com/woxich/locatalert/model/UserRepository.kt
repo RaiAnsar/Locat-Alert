@@ -82,7 +82,7 @@ class UserRepository @Inject constructor(
      * Updates the [User]s FCM message token stored in firestore, with the current device's message
      * token. This is used on 2 occasions:
      *  - When a user logs in: This will make sure he gets FCM messages on the device he logged in.
-     *  - When [GasparChatMessageService.onNewToken] is fired and a user is logged in. It will update their
+     *  - When [LocatAlertMessageService.onNewToken] is fired and a user is logged in. It will update their
      *      token in the database.
      * @param userUid UID if the user who will have his message token updated.
      * @return Async [Task].

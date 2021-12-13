@@ -5,7 +5,7 @@ import dagger.hilt.android.HiltAndroidApp
 import javax.inject.Inject
 
 @HiltAndroidApp
-class GasparChatApplication @Inject constructor(): Application()
+class LocatAlertApplication @Inject constructor(): Application()
 
 /**
  * Name of the application's shared preferences.

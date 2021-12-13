@@ -18,7 +18,7 @@ Listen when a new group is created.
  - Document index: chat room UID (wildcarded)
 */
 exports.newGroupCreated = functions
-    .region('asia-southeast1')
+    .region('europe-west1')
     .firestore
     .document('chatRooms/{chatRoomUid}')
     .onCreate((chatRoomSnap, context) => {
@@ -94,7 +94,7 @@ Listen when a Chat Room document gets a new message.
 - Document index: message UID (this is wildcarded)
 */
 exports.chatRoomNewMessage = functions
-    .region('asia-southeast1')
+    .region('europe-west1')
     .firestore
     //specify wildcarded path to a document (a message)
     .document('chatRooms/{chatRoomUid}/chatRoomMessages/{messageUid}')

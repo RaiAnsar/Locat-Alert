@@ -47,7 +47,7 @@
     <string name="home_friends_error">Error loading friends!</string>
     <string name="home_chats_error">Error loading chats!</string>
     <string name="home_block_error">Error loading blacklist!</string>
-    <string name="home_no_blocked">You have not blocked anyone.</string>
+    <string name="home_no_blocked">You didnt blocked anyone.</string>
     <string name="home_unblock_failed">Error unblocking.</string>
     <string name="home_unblock_success">You have unblocked %1$s .</string>
     <string name="home_groups">Groups</string>

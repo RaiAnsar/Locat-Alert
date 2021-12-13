@@ -41,7 +41,7 @@ fun CleanArchitectureNoteAppTheme(darkTheme: Boolean = true, content: @Composabl
 
 
 @Composable
-fun GasparChatTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable() () -> Unit) {
+fun LocatAlertTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable() () -> Unit) {
     val colors = if (darkTheme) {
         DarkColorPalette
     } else {

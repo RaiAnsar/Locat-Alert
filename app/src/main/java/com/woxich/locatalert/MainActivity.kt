@@ -24,7 +24,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.woxich.locatalert.R
-import com.woxich.locatalert.ui.theme.GasparChatTheme
+import com.woxich.locatalert.ui.theme.LocatAlertTheme
 import com.google.android.gms.common.ConnectionResult
 import com.google.android.gms.common.GoogleApiAvailability
 import com.google.firebase.messaging.FirebaseMessaging
@@ -223,7 +223,7 @@ fun MainActivityContent(
     stay: Boolean?,
     lifecycleOwner: LifecycleOwner
 ) {
-    GasparChatTheme {
+    LocatAlertTheme {
         Surface(color = MaterialTheme.colors.background) {
             //create nav controller
             val navController = rememberNavController()

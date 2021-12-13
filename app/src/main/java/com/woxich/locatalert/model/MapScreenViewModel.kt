@@ -37,7 +37,7 @@ class MapScreenViewModel @Inject constructor(
     private val geofencingClient: GeofencingClient,
     val firebaseAuth: FirebaseAuth,
     private val geofencePendingIntent: PendingIntent,
-    @SuppressLint("StaticFieldLeak") @ApplicationContext private val context: Context
+    @ApplicationContext private val context: Context
 ) : ViewModel() {
 
     private val _lastMarker = MutableLiveData<Marker?>(null)
@@ -62,7 +62,7 @@ class MapScreenViewModel @Inject constructor(
 
 
     val areaRadius = Transformations.map(sliderPosition) {
-        sliderPosition.value?.times(2000)?.toInt()
+        sliderPosition.value?.times(1000)?.toInt()
     }
 
     val alarms = repository.getAlarmsLive()

@@ -166,8 +166,8 @@ fun MapViewContainer(mapViewModel: MapScreenViewModel) {
 
 fun getInitialLocation() : Location {
     val initialLocation = Location("")
-    initialLocation.latitude = 25.3850478
-    initialLocation.longitude = 68.3814206
+    initialLocation.latitude = 51.506874
+    initialLocation.longitude = -0.139800
     return initialLocation
 }
 
