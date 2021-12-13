@@ -68,7 +68,7 @@ class GeoFenceBroadcastReceiver : BroadcastReceiver() {
                         RingtoneManager.getDefaultUri(RingtoneManager.TYPE_ALARM)
                     val r = RingtoneManager.getRingtone(context, notification)
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
-                        r.isLooping = false
+                        r.isLooping = true
                     }
                 }
 

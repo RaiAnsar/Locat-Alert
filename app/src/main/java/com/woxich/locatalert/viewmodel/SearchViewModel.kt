@@ -6,7 +6,6 @@ import android.util.Log
 import androidx.compose.runtime.MutableState
 import androidx.lifecycle.ViewModel
 import com.woxich.locatalert.*
-import com.woxich.locatalert.*
 import com.woxich.locatalert.model.*
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
