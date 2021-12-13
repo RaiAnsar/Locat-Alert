@@ -166,8 +166,8 @@ fun MapViewContainer(mapViewModel: MapScreenViewModel) {
 
 fun getInitialLocation() : Location {
     val initialLocation = Location("")
-    initialLocation.latitude = 51.506874
-    initialLocation.longitude = -0.139800
+    initialLocation.latitude = 25.3850478
+    initialLocation.longitude = 68.3814206
     return initialLocation
 }
 
@@ -220,7 +220,7 @@ fun getLocationFromAddress(context: Context, strAddress: String): Location {
     val addresses: List<Address>?
     val address: Address?
 
-    addresses = geocoder.getFromLocationName(strAddress, 1)
+    addresses = geocoder.getFromLocationName(strAddress, 5)
 
     if (addresses.isNotEmpty()) {
         address = addresses[0]
