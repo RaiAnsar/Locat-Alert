@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "62311722605",
+    "firebase_url": "https://locat-alert-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "locat-alert",
+    "storage_bucket": "locat-alert.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:62311722605:android:468dcefa8918d80faf1964",
+        "android_client_info": {
+          "package_name": "com.woxich.locatalert"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "62311722605-tp2nj431mfh1n16o4v9ks3soj2vkb1h2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdjDtyN6PUHNSAjG3Pb8afIuCj6pYwfmM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "62311722605-tp2nj431mfh1n16o4v9ks3soj2vkb1h2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
